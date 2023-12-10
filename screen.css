@@ -1,1 +1,323 @@
 /* Add screen styles below */
+@import url("https://fonts.google.com/specimen/Fjord+One");
+  
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+nav{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    list-style: none;
+    border:2px solid white;
+    margin:0;
+    text-align: center;
+    padding-bottom:10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    font-family: "FjordOne";
+    font-size: 4rem;
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background:linear-gradient(rgb(90, 217, 221), rgb(232, 112, 226));
+    
+}
+
+.homepageFirstLine{
+    display:flex;
+    justify-content: center;
+}
+
+.homepageTextboxOne{
+    width:1200px;
+
+    color:white;
+    background:black;
+    border:5px solid white;
+    border-radius: 40px;
+    font-size: 4rem;
+    padding:1rem;
+    text-align: center;
+    margin-top:20px;
+    font-family:"Fjord One";
+}
+
+.homepageSecondLine{
+    display:flex;
+    justify-content:center;
+}
+
+.homepageTextboxTwo{
+    background:rgb(221, 182, 226);
+    border:5px solid black;
+    border-radius: 20px;
+    font-size:2.8rem;
+    padding:1rem;
+    width:800px;
+    text-align: center;
+    margin-left:100px;
+    margin-top:50px;
+    margin-right:50px;
+    margin-bottom:50px;
+}
+
+.homepageImage{
+    border: 10px solid white;
+    height:475px;
+    width:693px;
+    border-radius: 50%;
+    margin-top:20px;
+    margin-right:100px;
+    margin-bottom:20px;
+    align-self: center;
+}
+
+.aboutImageLineOne{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.aboutImageLineTwo{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.aboutImageLineThree{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.aboutFirstImage{
+    width: 650px;
+    height:300px;
+    border: 7px solid white;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.aboutSecondImage{
+    width: 650px;
+    height:500px;
+    border: 7px solid white;
+    border-radius: 5px;
+}
+
+.aboutThirdImage{
+    width: 650px;
+    height:600px;
+    border: 7px solid white;
+    border-radius: 5px;
+}
+
+.aboutInfoTop{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+
+.aboutInfoTextTop{
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+
+    background-color: black;
+    border: 5px solid white;
+    width: 900px;
+    padding-left:1rem;
+    padding-right: 1rem;
+    padding-bottom:1rem;
+    padding-top:1rem;
+    border-radius: 40px;
+}
+
+.aboutInfoTextOne{
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+
+    background-color: black;
+    border: 5px solid white;
+    width: 700px;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 40px;
+}
+
+.aboutInfoTextTwo{
+    text-align: center;
+    color:white;
+    font-size: 2rem;
+
+    background-color: black;
+    border: 5px solid white;
+    width: 700px;
+    padding:1rem 1rem 1rem 1rem;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-right: 30px;
+
+}
+
+.aboutInfoTextThree{
+    text-align: center;
+    color:white;
+    font-size: 2.2rem;
+
+    background-color: black;
+    border: 5px solid white;
+    width: 650px;
+    padding:1rem 1rem 1rem 1rem;
+    border-radius: 40px;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+.logo{
+  width:87px;
+  height:70px;  
+}
+
+a:hover{
+    color:blueviolet;
+    transition:1s;
+}
+
+a.middleNavElement:hover{
+    color:rgb(232, 112, 226);
+    transition:1s;
+}
+
+a.rightAndLeftOfMiddleNavElement:hover{
+    color: rgb(90, 217, 221);
+    transition:1s;
+}
+
+@media screen and (max-width: 1300px){
+    .box1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:990px){
+    
+    .homepageTextboxOne{
+        width:auto;
+        height:min-content;
+    }
+
+    .homepageSecondLine{
+        flex-direction: column;
+    }
+
+    .homepageTextboxTwo{
+        width:auto;
+        height:auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+    .homepageImage{
+        width: auto;
+        height: min-content;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top:0px;
+        margin-bottom: 20px;
+        align-self: auto;
+    }
+
+    nav ul {
+        display:block;
+    }
+    nav ul li{
+        font-size: 3rem;
+    }
+    .firstListElement{
+        font-size: 4rem;
+    }
+    .logo{
+        width: 137px;
+        height: 120px;
+    }
+
+    .aboutImageLineOne{
+        flex-direction: column;
+    }
+
+    .aboutFirstImage{
+        order:-1;
+        width:auto;
+        height:min-content;
+        align-self: auto;
+    }
+
+    .aboutInfoTextOne{
+        width:auto;
+       height:min-content;
+       margin-right:0px;
+       margin-top: 10px;
+    }
+
+    .aboutImageLineTwo{
+        flex-direction:column;
+    }
+
+    .aboutSecondImage{
+        width:auto;
+        height:min-content; 
+    }
+
+    .aboutInfoTextTwo{
+        width: auto;
+        height: min-content;
+        margin-right:0px;
+    }
+
+    .aboutImageLineThree{
+        flex-direction:column;
+    }
+
+    .aboutThirdImage{
+        order: -1;
+        width:auto;
+        height:min-content;
+    }
+
+    .aboutInfoTextThree{
+        width:auto;
+        height:min-content;
+        margin-left:0px;
+        margin-bottom:0px;
+        margin-top:10px;
+    }
+}
