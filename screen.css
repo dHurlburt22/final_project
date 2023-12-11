@@ -1,5 +1,5 @@
 /* Add screen styles below */
-@import url("https://fonts.google.com/specimen/Fjord+One");
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
   
 
 *{
@@ -26,7 +26,6 @@ nav ul{
 }
 
 nav ul li{
-    font-family: "FjordOne";
     font-size: 4rem;
     color: white;
 }
@@ -65,7 +64,6 @@ body{
     padding:1rem;
     text-align: center;
     margin-top:20px;
-    font-family:"Fjord One";
 }
 
 .homepageSecondLine{
@@ -74,8 +72,8 @@ body{
 }
 
 .homepageTextboxTwo{
-    background:rgb(221, 182, 226);
-    border:5px solid black;
+    background-color: black;
+    border:5px solid white;
     border-radius: 20px;
     font-size:2.8rem;
     padding:1rem;
@@ -85,6 +83,7 @@ body{
     margin-top:50px;
     margin-right:50px;
     margin-bottom:50px;
+    color: white;
 }
 
 .homepageImage{
@@ -129,6 +128,7 @@ body{
     height:500px;
     border: 7px solid white;
     border-radius: 5px;
+    align-self:center;
 }
 
 .aboutThirdImage{
@@ -136,6 +136,7 @@ body{
     height:600px;
     border: 7px solid white;
     border-radius: 5px;
+    align-self:center;
 }
 
 .aboutInfoTop{
@@ -148,7 +149,7 @@ body{
 .aboutInfoTextTop{
     text-align: center;
     color:white;
-    font-size: 3rem;
+    font-size: 3.5rem;
 
     background-color: black;
     border: 5px solid white;
@@ -190,7 +191,7 @@ body{
 .aboutInfoTextThree{
     text-align: center;
     color:white;
-    font-size: 2.2rem;
+    font-size: 2rem;
 
     background-color: black;
     border: 5px solid white;
@@ -207,27 +208,11 @@ body{
 }
 
 a:hover{
-    color:blueviolet;
+    color:rgb(179, 56, 216);
     transition:1s;
 }
 
-a.middleNavElement:hover{
-    color:rgb(232, 112, 226);
-    transition:1s;
-}
-
-a.rightAndLeftOfMiddleNavElement:hover{
-    color: rgb(90, 217, 221);
-    transition:1s;
-}
-
-@media screen and (max-width: 1300px){
-    .box1{
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width:990px){
+@media screen and (max-width:1063px){
     
     .homepageTextboxOne{
         width:auto;
@@ -295,6 +280,7 @@ a.rightAndLeftOfMiddleNavElement:hover{
     .aboutSecondImage{
         width:auto;
         height:min-content; 
+        align-self:auto;
     }
 
     .aboutInfoTextTwo{
@@ -311,13 +297,14 @@ a.rightAndLeftOfMiddleNavElement:hover{
         order: -1;
         width:auto;
         height:min-content;
+        align-self:auto;
     }
 
     .aboutInfoTextThree{
         width:auto;
         height:min-content;
         margin-left:0px;
-        margin-bottom:0px;
+        margin-bottom:10px;
         margin-top:10px;
     }
 }
